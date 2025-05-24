@@ -1,4 +1,4 @@
-# 01_03 Create a key pair
+# 01_03 Create an IAM role for the Jenkins server
 
 <!-- FooterStart -->
 ---
