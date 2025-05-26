@@ -1,4 +1,4 @@
-# 02_05 Connect the Jenkins master to the build server
+# 02_05 Connect Jenkins to the build server
 
 <!-- FooterStart -->
 ---
