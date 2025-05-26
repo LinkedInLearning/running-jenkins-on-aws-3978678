@@ -30,10 +30,12 @@ In this lesson you will:
         /etc/apt/sources.list.d/jenkins.list > /dev/null
     ```
 
-1. Update the source lists and upgrade any out of date packages:
+1. Update the source list and upgrade any out of date packages:
 
     ```bash
-    sudo apt-get update
+    apt update
+    apt --yes upgrade
+    systemctl daemon-reload
     ```
 
 ## 3. Install Java, Jenkins, and NGINX
@@ -47,20 +49,20 @@ Install the software needed to run Jenkins:
 1. Install JDK and NGINX first:
 
     ```bash
-    apt -y install openjdk-21-jdk nginx
+    apt --yes install openjdk-21-jdk nginx
     ```
 
 1. Then install Jenkins:
 
     ```bash
-    apt -y install jenkins
+    apt --yes install jenkins
     ```
 
 1. Confirm that Jenkins and NGINX are installed:
 
     ```bash
-    systemctl status nginx | grep Active
-    systemctl status jenkins | grep Active
+    systemctl status nginx --no-pager
+    systemctl status jenkins --no-pager
     ```
 
 <!-- FooterStart -->
