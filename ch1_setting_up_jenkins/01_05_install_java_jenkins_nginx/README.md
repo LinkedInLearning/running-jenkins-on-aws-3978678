@@ -34,7 +34,6 @@ In this lesson you will:
 
     ```bash
     sudo apt-get update
-    sudo apt-get install jenkins
     ```
 
 ## 3. Install Java, Jenkins, and NGINX
