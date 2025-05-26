@@ -22,11 +22,11 @@ In this lesson you will:
 1. Download the aptitude key for the Jenkins application and add the Jenkins Debian repo to the aptitude sources list:
 
     ```bash
-    sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+    wget -O /etc/apt/keyrings/jenkins-keyring.asc \
         https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 
     echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
-        https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+        https://pkg.jenkins.io/debian-stable binary/ | tee \
         /etc/apt/sources.list.d/jenkins.list > /dev/null
     ```
 
