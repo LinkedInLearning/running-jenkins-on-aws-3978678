@@ -16,10 +16,32 @@
 1. Under **User data**, enter the following:
 
     ```bash
-    #!/bin/bash -xe
+    #!/bin/bash
+    set -eux
 
     # Log the installation output
     exec > >(tee /var/log/user-data.log) 2>&1
+
+    # Unmount /tmp if already mounted
+    umount /tmp || true
+
+    # Create the /tmp directory if it doesn't exist
+    mkdir -p /tmp
+
+    # Backup /etc/fstab
+    cp /etc/fstab /etc/fstab-$(date +%s).bak
+
+    # Remove any existing /tmp entry (just in case)
+    sed -i '/\/tmp/d' /etc/fstab
+
+    # Add a new tmpfs entry for /tmp with 4G size
+    echo "tmpfs /tmp tmpfs defaults,size=4G 0 0" >> /etc/fstab
+
+    # Mount all filesystems in fstab (including /tmp)
+    mount -a
+
+    # Set correct permissions for /tmp
+    chmod 1777 /tmp
 
     # install the ssm-agent
     dnf install --assumeyes \
@@ -32,6 +54,8 @@
 
     # install development tools
     dnf groupinstall -y "Development Tools"
+
+    reboot now
     ```
 
 1. Select **Launch instance**.
