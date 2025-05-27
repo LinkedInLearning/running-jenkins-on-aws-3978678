@@ -25,13 +25,13 @@
     dnf install --assumeyes \
         https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
 
-    # install development tools
-    yum install -y group install "Development Tools"
-
     # install java and python
     dnf install --assumeyes \
         java-21-amazon-corretto-headless \
         python3.12.x86_64
+
+    # install development tools
+    dnf groupinstall -y "Development Tools"
     ```
 
 1. Select **Launch instance**.
