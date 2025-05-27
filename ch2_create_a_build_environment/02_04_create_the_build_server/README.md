@@ -26,7 +26,7 @@
         https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
 
     # install development tools
-    dnf install --assumeyes group install "Development Tools"
+    yum install -y group install "Development Tools"
 
     # install java and python
     dnf install --assumeyes \
