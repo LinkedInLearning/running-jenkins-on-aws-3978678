@@ -16,7 +16,8 @@
 1. Under **User data**, enter the following:
 
     ```bash
-    # !/bin/bash
+    #!/bin/bash -xe
+    exec > >(tee /var/log/user-data.log) 2>&1
 
     yum -y group install "Development Tools"
 
