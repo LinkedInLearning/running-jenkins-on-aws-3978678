@@ -17,14 +17,21 @@
 
     ```bash
     #!/bin/bash -xe
+
+    # Log the installation output
     exec > >(tee /var/log/user-data.log) 2>&1
 
-    yum -y group install "Development Tools"
+    # install the ssm-agent
+    dnf install --assumeyes \
+        https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
 
-    yum install -y \
-        https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm \
+    # install development tools
+    dnf install --assumeyes group install "Development Tools"
+
+    # install java and python
+    dnf install --assumeyes \
         java-21-amazon-corretto-headless \
-        python3
+        python3.12.x86_64
     ```
 
 1. Select **Launch instance**.
