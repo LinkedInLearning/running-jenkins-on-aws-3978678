@@ -21,18 +21,12 @@
     # install dependencies
 
     yum -y group install "Development Tools"
+
     yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
 
     yum -y install \
-            bzip2-devel.x86_64 \
             java-21-amazon-corretto-headless \
-            libffi-devel \
-            ncurses-devel \
-            openssl-devel \
             python3 \
-            readline-devel.x86_64 \
-            sqlite-devel.x86_64 \
-            zlib-devel
     ```
 
 1. Select **Launch instance**.
