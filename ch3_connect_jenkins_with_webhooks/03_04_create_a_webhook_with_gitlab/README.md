@@ -34,16 +34,16 @@ This challenge should take 15 to 20 minutes to complete.
    - Create a new token with the following settings:
 
      - **Name**: Any descriptive name (e.g., `Jenkins Access`)
-     - **Scopes**: Select **read\_repository**
+     - **Scopes**: Select **read_repository**
    - Copy and save the token somewhere safe—you will need it later.
 
 ### 2. Configure Jenkins
 
 1. **Install the GitLab Plugin**
 
-   - Go to **Manage Jenkins > Plugin Manager > Available Plugins**.
+   - Go to **Manage Jenkins > Plugins  > Available Plugins**.
    - Search for `gitlab-plugin`.
-   - Select the checkbox next to the plugin and select **Install without restart**.
+   - Select the checkbox next to the plugin and select **Install**.
 
 1. **Create a New Jenkins Job**
 
