@@ -24,5 +24,5 @@ If you need to ramp up or refresh yourself on any of these subjects, there are o
 
 <!-- FooterStart -->
 ---
-[← 0_01 Intro](../00_01_intro/README.md) | [01_01 Architect the Jenkins Environment on AWS →](../../ch1_setting_up_jenkins/01_01_architect_the_jenkins_environment_on_aws/README.md)
+[← 00_01 Intro](../00_01_intro/README.md) | [01_01 Architect the Jenkins Environment on AWS →](../../ch1_setting_up_jenkins/01_01_architect_the_jenkins_environment_on_aws/README.md)
 <!-- FooterEnd -->

@@ -48,5 +48,5 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 
 <!-- FooterStart -->
 ---
-[0_01 Intro →](ch0_introduction/00_01_intro/README.md)
+[00_01 Intro →](ch0_introduction/00_01_intro/README.md)
 <!-- FooterEnd -->

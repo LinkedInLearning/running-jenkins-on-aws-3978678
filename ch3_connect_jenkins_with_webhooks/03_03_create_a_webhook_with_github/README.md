@@ -2,5 +2,5 @@
 
 <!-- FooterStart -->
 ---
-[← 03_02 What's a webhook?](../03_02_whats_a_webhook/README.md) | [03_04 Create and test a webhook with GitLab (TEXT) →](../03_04_create_a_webhook_with_gitlab/README.md)
+[← 03_02 What's a webhook?](../03_02_whats_a_webhook/README.md) | [03_04 Create and test a webhook with GitLab →](../03_04_create_a_webhook_with_gitlab/README.md)
 <!-- FooterEnd -->
