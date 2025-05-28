@@ -84,6 +84,7 @@ This challenge should take 15 to 20 minutes to complete.
         ```
 
 1. Select **Save** to finalize the job configuration.
+1. Copy the Jenkins server URL by selecting the icon in the top right, right-click and select **Copy link address**.
 
 ## 3. Create a Webhook in Bitbucket
 
