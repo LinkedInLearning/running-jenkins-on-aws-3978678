@@ -1,4 +1,4 @@
-# 0_02 What you should know (TEXT)
+# 0_02 What you should know
 
 Before getting started on this course, there are some things you should be familiar with.  You’ll also need to have two accounts in place.
 
