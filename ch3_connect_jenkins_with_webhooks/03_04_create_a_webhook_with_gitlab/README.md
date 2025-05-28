@@ -28,6 +28,8 @@ This challenge should take 15 to 20 minutes to complete.
 
    - In the repository, select **Code**, then under **Clone**, select **HTTPS** and select the **clipboard icon** to copy the URL.
 
+   ![03_04-02-g-copy-the-03_04-repo-url](images/03_04-02-g-copy-the-03_04-repo-url.png)
+
 1. **Create an Access Token**
 
    - Go to **User Settings > Access Tokens**.
@@ -37,6 +39,8 @@ This challenge should take 15 to 20 minutes to complete.
      - **Scopes**: Select **read_repository**
    - Copy and save the token somewhere safe—you will need it later.
 
+   ![03_04-00-g-create-an-access-token](images/03_04-00-g-create-an-access-token.png)
+
 ### 2. Configure Jenkins
 
 1. **Install the GitLab Plugin**
@@ -44,6 +48,8 @@ This challenge should take 15 to 20 minutes to complete.
    - Go to **Manage Jenkins > Plugins  > Available Plugins**.
    - Search for `gitlab-plugin`.
    - Select the checkbox next to the plugin and select **Install**.
+
+   ![03_04-01-j-install-the-03_04-plugin](images/03_04-01-j-install-the-03_04-plugin.png)
 
 1. **Create a New Jenkins Job**
 
@@ -57,6 +63,8 @@ This challenge should take 15 to 20 minutes to complete.
    - Paste the GitLab repository URL you copied earlier.
    - You will likely see an authentication error at this point.
 
+   ![03_04-03-j-add-the-repo-url-to-scm-and-create-credentials](images/03_04-03-j-add-the-repo-url-to-scm-and-create-credentials.png)
+
 1. **Add GitLab Credentials**
 
    - select **Add > Jenkins** under the **Credentials** dropdown.
@@ -64,9 +72,13 @@ This challenge should take 15 to 20 minutes to complete.
    - Enter your **GitLab username** and paste the **access token** into the password field.
    - select **Add**.
 
+   ![03_04-04-j-create-username-with-password-credential](images/03_04-04-j-create-username-with-password-credential.png)
+
 1. **Select Your Credentials**
 
    - Back under **Source Code Management**, select the new credentials you just added from the **Credentials** dropdown.
+
+   ![03_04-05-j-select-the-credential](images/03_04-05-j-select-the-credential.png)
 
 1. **Configure Branches**
 
@@ -77,8 +89,13 @@ This challenge should take 15 to 20 minutes to complete.
     - Scroll to the **Build Triggers** section.
     - Check the box for **Build when a change is pushed to GitLab**.
     - Copy the **Webhook URL** shown on screen.
+
+    ![03_04-06-j-add-trigger-for-03_04-copy-webhook-url](images/03_04-06-j-add-trigger-for-03_04-copy-webhook-url.png)
+
     - Select **Advanced**, scroll to the bottom, and select **Generate** to create a secret token.
     - Copy the **Secret Token** and save it along with the Webhook URL.
+
+    ![03_04-07-j-advanced-create-secret-token](images/03_04-07-j-advanced-create-secret-token.png)
 
 1. **Add a Build Step**
 
@@ -91,12 +108,18 @@ This challenge should take 15 to 20 minutes to complete.
 
     - Select **Save** to finish creating the job.
 
+    ![03_04-08-j-add-build-step-save-job](images/03_04-08-j-add-build-step-save-job.png)
+
 ### 3. Create the Webhook in GitLab
 
 1. **Add a Webhook**
 
     - In your GitLab repository, go to **Settings > Webhooks**.
     - Select **Add New Webhook**.
+
+    ![03_04-09-g-settings-webhook](images/03_04-09-g-settings-webhook.png)
+
+    ![03_04-10-g-add-webhook](images/03_04-10-g-add-webhook.png)
 
 1. **Fill in Webhook Details**
 
@@ -106,16 +129,29 @@ This challenge should take 15 to 20 minutes to complete.
     - (Optional) Disable SSL verification if your Jenkins server does not use HTTPS.
     - Select **Add Webhook**.
 
+    ![03_04-11-g-configure-the-webhook](images/03_04-11-g-configure-the-webhook.png)
+
+    ![03_04-12-g-disable-ssl-verification](images/03_04-12-g-disable-ssl-verification.png)
+
 1. **Test the Webhook**
 
     - Select **Test > Push Events** to test the webhook connection.
+
+    ![03_04-13-g-test-the-webhook](images/03_04-13-g-test-the-webhook.png)
+
+    ![03_04-14-g-confirm-webhook-success](images/03_04-14-g-confirm-webhook-success.png)
 
 1. **Verify the Integration**
 
     - Make a small edit to the `README.md` file in GitLab.
     - Commit the change.
+
+    ![03_04-15-g-make-a-change](images/03_04-15-g-make-a-change.png)
+
     - In Jenkins, open your project and view the **Console Output**.
     - Confirm that the build was triggered by the GitLab push event.
+
+    ![03_04-16-j-confirm-job-ran](images/03_04-16-j-confirm-job-ran.png)
 
 <!-- FooterStart -->
 ---
