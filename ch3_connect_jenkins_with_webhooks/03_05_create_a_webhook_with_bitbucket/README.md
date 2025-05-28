@@ -1,4 +1,14 @@
-# 03_05 Create and test a webhook with Bitbucket (TEXT)
+# 03_05 Create and test a webhook with Bitbucket
+
+- [Bitbucket Documentation: Manage webhooks](https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/)
+
+## Install the Bitbucket Push and Pull Request Plugin
+
+- [Bitbucket Push and Pull Request Plugin](https://plugins.jenkins.io/bitbucket-push-and-pull-request/)
+
+1. Select **Manage Jenkins** -> **Plugins** -> **Available plugins**.
+1. Search for `Bitbucket Push and Pull Request`
+1. Select and install the plugin
 
 <!-- FooterStart -->
 ---
