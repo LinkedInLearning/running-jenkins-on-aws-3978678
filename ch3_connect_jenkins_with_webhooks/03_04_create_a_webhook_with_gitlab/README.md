@@ -26,7 +26,7 @@ This challenge should take 15 to 20 minutes to complete.
 
 1. **Copy the Repository URL**
 
-   - In the repository, select **Code**, then under **Clone**, select **HTTPS** and select the **clipboard icon** to copy the URL.
+   - In the repository, select **Code**, then under **Clone with HTTPS** select the **clipboard icon** to copy the URL.
 
    ![03_04-02-g-copy-the-03_04-repo-url](images/03_04-02-g-copy-the-03_04-repo-url.png)
 
