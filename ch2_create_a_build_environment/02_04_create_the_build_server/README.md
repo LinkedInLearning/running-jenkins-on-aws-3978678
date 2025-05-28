@@ -29,7 +29,7 @@
     mkdir -p /tmp
 
     # Backup /etc/fstab
-    cp /etc/fstab /etc/fstab-$(date +%s).bak
+    cp /etc/fstab /etc/fstab-$(date +%s).txt
 
     # Remove any existing /tmp entry (just in case)
     sed -i '/\/tmp/d' /etc/fstab
@@ -42,10 +42,6 @@
 
     # Set correct permissions for /tmp
     chmod 1777 /tmp
-
-    # install the ssm-agent
-    dnf install --assumeyes \
-        https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
 
     # install java and python
     dnf install --assumeyes \
