@@ -28,7 +28,7 @@ This challenge should take 15 to 20 minutes to complete.
 
    - In the repository, select **Code**, then under **Clone with HTTPS** select the **clipboard icon** to copy the URL.
 
-   ![Copy the GitLab repository URL from the Clone with HTTPS section](images/03_04-02-g-copy-the-03_04-repo-url.png)
+   ![Copy the GitLab repository URL from the Clone with HTTPS section](images/03_04-02-g-copy-the-repo-url.png)
 
 1. **Create an Access Token**
 
@@ -49,7 +49,7 @@ This challenge should take 15 to 20 minutes to complete.
    - Search for `gitlab-plugin`.
    - Select the checkbox next to the plugin and select **Install**.
 
-   ![Install the GitLab plugin in Jenkins from the Available Plugins section](images/03_04-01-j-install-the-03_04-plugin.png)
+   ![Install the GitLab plugin in Jenkins from the Available Plugins section](images/03_04-01-j-install-the-plugin.png)
 
 1. **Create a New Jenkins Job**
 
@@ -90,7 +90,7 @@ This challenge should take 15 to 20 minutes to complete.
     - Check the box for **Build when a change is pushed to GitLab**.
     - Copy the **Webhook URL** shown on screen.
 
-    ![Enable GitLab webhook trigger and copy the webhook URL in Jenkins](images/03_04-06-j-add-trigger-for-03_04-copy-webhook-url.png)
+    ![Enable GitLab webhook trigger and copy the webhook URL in Jenkins](images/03_04-06-j-add-trigger-for-copy-webhook-url.png)
 
     - Select **Advanced**, scroll to the bottom, and select **Generate** to create a secret token.
     - Copy the **Secret Token** and save it along with the Webhook URL.
