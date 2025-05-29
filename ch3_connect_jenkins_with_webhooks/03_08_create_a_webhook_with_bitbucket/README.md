@@ -164,5 +164,5 @@ This challenge should take 15 to 20 minutes to complete.
 
 <!-- FooterStart -->
 ---
-[← 03_07 Create and test a webhook with GitLab](../03_07_create_a_webhook_with_gitlab/README.md) | [04_01 Plan the Deployment Target in AWS Lambda →](../../ch4_deploy_code_to_aws_lambda/04_01_plan_the_deployment_target_in_aws_lambda/README.md)
+[← 03_07 Create and test a webhook with GitLab](../03_07_create_a_webhook_with_gitlab/README.md) | [04_01 Initialize the deployment target in AWS Lambda →](../../ch4_deploy_code_to_aws_lambda/04_01_initialize_the_deployment_target_in_AWS_Lambda/README.md)
 <!-- FooterEnd -->
