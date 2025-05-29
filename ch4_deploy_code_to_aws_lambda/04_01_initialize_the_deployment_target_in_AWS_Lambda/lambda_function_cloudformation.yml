@@ -1,0 +1,124 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: >
+  This CloudFormation template creates resources for a Python-based API.
+
+  The following outputs are created for your reference:
+    1) Region where the stack is deployed.
+    2) The name of the Lambda function.
+    3) The URL for the API
+
+
+Resources:
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub ${AWS::StackName}-LambdaExecutionRole
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: LambdaExecutionPolicy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - logs:CreateLogGroup
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: "*"
+
+  LambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Description: The "production" environment for the Python-based API.
+      FunctionName: !Sub ${AWS::StackName}
+      Runtime: python3.12
+      Handler: index.handler
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Environment:
+        Variables:
+          ENVIRONMENT: PRODUCTION
+          VERSION: 0
+          PLATFORM: CloudFormation
+          BUILD_NUMBER: 0
+      Code:
+        ZipFile: |
+          def handler(event, context):
+              import os
+              environment = os.environ['ENVIRONMENT']
+              html_response = f"""
+              <!DOCTYPE html>
+              <html>
+              <head>
+                  <title>Welcome - {environment}</title>
+                  <style>
+                      body {{
+                          font-family: Arial, sans-serif;
+                          line-height: 1.6;
+                          max-width: 800px;
+                          margin: 0 auto;
+                      }}
+                      h1, h2 {{
+                          color: #333;
+                          border-bottom: 1px solid #ccc;
+                      }}
+                      p {{
+                          margin-bottom: 16px;
+                      }}
+                  </style>
+              </head>
+              <body>
+                  <h1>The <bold>{environment}<bold> environment has been deployed successfully.</h1>
+                  <p>This page is just a place holder for the Python-based API.</p>
+                  <p>Take the next step by deploying the code for the application.</p>
+              </body>
+              </html>
+              """
+              return {
+                  'statusCode': 200,
+                  'headers': {
+                      'Content-Type': 'text/html',
+                  },
+                  'body': html_response
+              }
+
+  LambdaUrl:
+    Type: AWS::Lambda::Url
+    Properties:
+      TargetFunctionArn: !Ref LambdaFunction
+      AuthType: NONE
+
+  LambdaUrlPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref LambdaFunction
+      Principal: "*"
+      Action: "lambda:InvokeFunctionUrl"
+      FunctionUrlAuthType: NONE
+
+Outputs:
+  AwsRegion:
+    Description: The AWS_REGION where the stack is deployed.
+    Value:
+      !Sub ${AWS::Region}
+    Export:
+      Name: !Sub ${AWS::StackName}-AwsRegion
+
+  FunctionName:
+    Description: The name of the Lambda function for the production environment.
+    Value: !Sub ${AWS::StackName}
+    Export:
+      Name: !Sub ${AWS::StackName}-FunctionName
+
+  FunctionURL:
+    Description: The URL for the production environment.
+    Value:
+      Fn::GetAtt: LambdaUrl.FunctionUrl
+    Export:
+      Name: !Sub ${AWS::StackName}-FunctionURL
