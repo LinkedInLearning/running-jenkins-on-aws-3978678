@@ -66,8 +66,8 @@ This challenge should take 15 to 20 minutes to complete.
 1. In Jenkins, copy the base URL of your Jenkins server.
    (Copy it from the browser bar or right-select the Jenkins logo and select **Copy link address**.)
 2. In GitHub, go to your repository and select **Settings**.
-3. Select**Webhooks** in the left menu.
-4. Select**Add webhook**.
+3. Select **Webhooks** in the left menu.
+4. Select **Add webhook**.
 
     - Paste the Jenkins server URL into the **Payload URL** field.
     - At the end of the URL, append `/github-webhook/`
