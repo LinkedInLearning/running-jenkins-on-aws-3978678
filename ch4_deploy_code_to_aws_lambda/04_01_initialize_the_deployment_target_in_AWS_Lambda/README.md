@@ -1,10 +1,10 @@
 # 04_01 Initialize the deployment target in AWS Lambda
 
-In this lesson, you'll initialize a deployment target in AWS by launching a Lambda function using a CloudFormation template. This template defines all the resources required to host a Python-based API.
+In this lab, you'll initialize a deployment target in AWS by launching a Lambda function using a CloudFormation template. This template defines all the resources required to host a Python-based API.
 
 Once deployed, you'll explore the CloudFormation stack details and identify key information needed to configure your deployment pipeline.
 
-This challenge should take 10 to 15 minutes to complete.
+This lab should take 5 to 10 minutes to complete.
 
 ## Overview
 
@@ -13,7 +13,10 @@ This challenge should take 10 to 15 minutes to complete.
 
 ## Instructions
 
-### Download the Exercise Files
+### 1. Download the Exercise Files
+
+> [!NOTE]
+> If you've already downloaded the exercise files, you can skip this step!
 
 1. Visit the course GitHub repository.
 1. From the home page of the repository, select **Code > Download ZIP**.
@@ -21,7 +24,7 @@ This challenge should take 10 to 15 minutes to complete.
 1. Navigate to the lesson folder:
    `ch4_deploy_code_to_aws_lambda/04_01_initialize_the_deployment_target_in_AWS_Lambda`
 
-### Deploy the CloudFormation Template
+### 2. Deploy the CloudFormation Template
 
 > [!IMPORTANT]
 > Make sure you deploy the CloudFormation stack in the same region where your Jenkins server and Build server are deployed.
