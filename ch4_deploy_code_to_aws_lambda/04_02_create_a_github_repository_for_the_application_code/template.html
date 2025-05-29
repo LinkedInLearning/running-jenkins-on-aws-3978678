@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Python API – {environment}</title>
+
+    <!-- Pure CSS, embedded -->
+    <style>
+        :root {
+            --accent: #26a69a;
+            --btn-bg: #2e7d32;
+            --btn-fg: #fff;
+        }
+        *        { box-sizing: border-box; }
+        body     { font-family: Arial, sans-serif; line-height: 1.6; margin: 0 auto; max-width: 820px; padding: 1rem; }
+        h1, h2   { border-bottom: 1px solid #ccc; color:#333; }
+        table    { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td   { padding: .6rem 1rem; border: 1px solid #ccc; text-align: left; }
+        th       { background:#f2f2f2; font-weight:700; }
+        th:first-child,
+        td:first-child { font-weight:700; background:var(--accent); color:#fff; }
+        /* button‐look anchors */
+        .btn   { display:inline-block; margin:.4rem 0; padding:.6rem 1.2rem; border-radius:5px;
+                 background:var(--btn-bg); color:var(--btn-fg); text-decoration:none; font-weight:700; }
+        .btn:visited{ color:var(--btn-fg); }
+    </style>
+</head>
+<body>
+    <h1>The Python API</h1>
+
+    <table>
+        <tr><td>Environment</td><td><b>{environment}</b></td></tr>
+        <tr><td>Version</td>    <td><b>{version}</b></td></tr>
+        <tr><td>Platform</td>   <td><b>{platform}</b></td></tr>
+        <tr><td>Build #</td>    <td><b>{build_number}</b></td></tr>
+    </table>
+
+    <h2>GET&nbsp;/</h2>
+    <p>Returns this documentation page.</p>
+    <a class="btn" href="/">Try it</a>
+
+    <h2>GET&nbsp;/data</h2>
+    <p>Returns all data in JSON format.</p>
+    <a class="btn" href="/data">Try it</a>
+
+    <h2>GET&nbsp;/&#123;id&#125;</h2>
+    <p>Returns a specific item by ID in JSON format.</p>
+    <a class="btn" href="/1">Try it</a>
+</body>
+</html>
