@@ -155,5 +155,5 @@ This challenge should take 15 to 20 minutes to complete.
 
 <!-- FooterStart -->
 ---
-[← 03_03 Create and test a webhook with GitHub](../03_03_create_a_webhook_with_github/README.md) | [03_05 Create and test a webhook with Bitbucket →](../03_05_create_a_webhook_with_bitbucket/README.md)
+[← 03_07 Solution Connect Jenkins to GitHub](../03_05_solution_connect_jenkins_to_github/README.md) | [03_08 Create and test a webhook with Bitbucket →](../03_08_create_a_webhook_with_bitbucket/README.md)
 <!-- FooterEnd -->

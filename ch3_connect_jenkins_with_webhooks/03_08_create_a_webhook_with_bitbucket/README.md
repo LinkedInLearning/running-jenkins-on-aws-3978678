@@ -17,7 +17,7 @@ This challenge should take 15 to 20 minutes to complete.
 
 ## Instructions
 
-## 1 Create Bitbucket Repository and Access Token
+### 1. Create Bitbucket Repository and Access Token
 
 1. Log in to your Bitbucket account.
 1. Create a new repository:
@@ -52,7 +52,7 @@ This challenge should take 15 to 20 minutes to complete.
    ![Create access token in Bitbucket](images/03_08-03-b-create-access-token.png)
    ![Copy the generated access token](images/03_08-04-b-copy-access-token.png)
 
-## 2: Install Plugin and Create a Jenkins Freestyle Project
+### 2. Install Plugin and Create a Jenkins Freestyle Project
 
 1. In Jenkins, go to **Manage Jenkins** > **Plugins** > **Available Plugins**.
 1. Search for **Bitbucket Push and Pull Request**.
@@ -111,7 +111,7 @@ This challenge should take 15 to 20 minutes to complete.
 
    ![Copy Jenkins URL for webhook configuration](images/03_08-11-j-copy-jenkins-url.png)
 
-## 3. Create a Webhook in Bitbucket
+### 3. Create a Webhook in Bitbucket
 
 1. Return to the Bitbucket repository.
 1. Go to **Repository Settings** > **Webhooks** > **Add Webhook**.
@@ -135,7 +135,7 @@ This challenge should take 15 to 20 minutes to complete.
 
    ![Configure and save webhook settings](images/03_08-14-b-configure-save-webhook.png)
 
-## 4: Test the Webhook
+### 4. Test the Webhook
 
 1. Go back to the repository code view and open the **README.md** file.
 1. Select **Edit**, make a small change, and **commit** the update to the `main` branch.
@@ -164,5 +164,5 @@ This challenge should take 15 to 20 minutes to complete.
 
 <!-- FooterStart -->
 ---
-[← 03_04 Create and test a webhook with GitLab](../03_04_create_a_webhook_with_gitlab/README.md) | [03_06 Challenge Connect Jenkins to GitHub →](../03_06_challenge_connect_jenkins_to_github/README.md)
+[← 03_07 Create and test a webhook with GitLab](../03_07_create_a_webhook_with_gitlab/README.md) | [04_01 Plan the Deployment Target in AWS Lambda →](../../ch4_deploy_code_to_aws_lambda/04_01_plan_the_deployment_target_in_aws_lambda/README.md)
 <!-- FooterEnd -->
