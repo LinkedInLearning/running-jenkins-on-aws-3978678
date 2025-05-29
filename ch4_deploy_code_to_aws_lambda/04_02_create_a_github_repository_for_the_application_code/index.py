@@ -53,7 +53,7 @@ def _inject_template_vars(html: str) -> str:
     replacements = {
         "{environment}": os.getenv("ENVIRONMENT", "undefined"),
         "{version}": os.getenv("VERSION", "undefined"),
-        "{platform}": os.getenv("PLATFORM", "undefined"),
+        "{build_tag}": os.getenv("BUILD_TAG", "undefined"),
         "{build_number}": os.getenv("BUILD_NUMBER", "undefined"),
     }
     for token, value in replacements.items():

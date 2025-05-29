@@ -46,10 +46,12 @@
     # install java and python
     dnf install --assumeyes \
         java-21-amazon-corretto-headless \
-        python3.12.x86_64
+        python3.12.x86_64 \
+        python3.12-pip
 
     # install development tools
     dnf groupinstall -y "Development Tools"
+    pip install virtualenv
 
     reboot now
     ```

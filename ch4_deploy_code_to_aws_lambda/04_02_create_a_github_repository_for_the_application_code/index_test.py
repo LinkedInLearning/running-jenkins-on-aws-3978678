@@ -17,7 +17,7 @@ class TestHandler(unittest.TestCase):
             {
                 "ENVIRONMENT": self.mock_env,
                 "VERSION": "v0.0.0-test",
-                "PLATFORM": "python3.12",
+                "BUILD_TAG": "python3.12",
                 "BUILD_NUMBER": "000",
             },
         )

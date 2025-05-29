@@ -1,8 +1,3 @@
-FUNCTION=undefined
-PLATFORM=undefined
-URL=undefined
-VERSION=undefined
-BUILD_NUMBER=undefined
 CODE=$(shell ls *.py)
 
 ifneq (,$(findstring -staging,$(FUNCTION)))
@@ -34,7 +29,7 @@ hello:
 	@echo
 	@echo "Optional deploy variables are:"
 	@echo "  VERSION       - the version of the code being deployed (default: undefined)"
-	@echo "  PLATFORM      - the platform being used for the deployment (default: undefined)"
+	@echo "  BUILD_TAG     - the tag assigned by the deployment platform (default: undefined)"
 	@echo "  BUILD_NUMBER  - the build number assigned by the deployment platform (default: undefined)"
 	@echo "  URL           - the URL to use for testing the deployment (default: undefined)"
 	@echo
@@ -54,16 +49,12 @@ check:
 lint:
 	pylint --exit-zero --errors-only --disable=C0301 --disable=C0326 --disable=R,C $(CODE)
 	flake8 --exit-zero --ignore=E501,E231 $(CODE)
+	black --diff $(CODE)
+	isort --check-only --diff $(CODE)
 
 fmt:
 	black $(CODE)
 	isort $(CODE)
-
-black:
-	black --diff $(CODE)
-
-isort:
-	isort --check-only --diff $(CODE)
 
 test:
 	python -m unittest -v index_test
@@ -72,23 +63,34 @@ build:
 	zip lambda.zip index.py data.json template.html
 
 deploy:
+	@echo
 	aws sts get-caller-identity
 
+	@echo
 	aws lambda wait function-active \
+		--region=$(REGION) \
 		--function-name="$(FUNCTION)"
 
+	@echo
 	aws lambda update-function-configuration \
+		--region=$(REGION) \
 		--function-name="$(FUNCTION)" \
-		--environment "Variables={PLATFORM=$(PLATFORM),VERSION=$(VERSION),BUILD_NUMBER=$(BUILD_NUMBER),ENVIRONMENT=$(ENVIRONMENT)}"
+		--environment "Variables={BUILD_TAG=$(BUILD_TAG),VERSION=$(VERSION),BUILD_NUMBER=$(BUILD_NUMBER),ENVIRONMENT=$(ENVIRONMENT)}"
 
+	@echo
 	aws lambda wait function-updated \
+		--region=$(REGION) \
 		--function-name="$(FUNCTION)"
 
+	@echo
 	aws lambda update-function-code \
+		--region=$(REGION) \
 		--function-name="$(FUNCTION)" \
 	 	--zip-file=fileb://lambda.zip
 
+	@echo
 	aws lambda wait function-updated \
+		--region=$(REGION) \
 		--function-name="$(FUNCTION)"
 
 testdeployment:
@@ -97,6 +99,6 @@ testdeployment:
 clean:
 	rm -vf lambda.zip
 
-all: clean lint black test build deploy
+all: requirements clean lint test build deploy
 
 .PHONY: test build deploy all clean
