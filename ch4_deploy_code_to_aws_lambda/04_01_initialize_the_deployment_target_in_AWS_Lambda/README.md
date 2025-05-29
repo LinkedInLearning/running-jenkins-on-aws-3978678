@@ -1,4 +1,4 @@
-# 04_01 Plan the Deployment Target in AWS Lambda
+# 04_01 Initialize the deployment target in AWS Lambda
 
 <!-- FooterStart -->
 ---
