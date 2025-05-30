@@ -1,6 +1,6 @@
 # 01_09 Solution Set up a Jenkins server
 
-In this Challenge, you’ll create and configure the AWS resources needed to host a Jenkins server.
+In this challenge, you’ll create and configure the AWS resources needed to host a Jenkins server.
 
 The challenge walks through the full setup process: from provisioning infrastructure in AWS to installing and configuring Jenkins with NGINX as a reverse proxy.
 
