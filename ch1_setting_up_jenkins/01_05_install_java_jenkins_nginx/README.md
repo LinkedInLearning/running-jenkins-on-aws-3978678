@@ -1,6 +1,6 @@
 # 01_05 Install Java, Jenkins, NGINX
 
-In this lesson you will:
+In this lab you will:
 
 1. Connect to the Jenkins server using Session Manager.
 1. Update the operating system packages.
