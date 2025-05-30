@@ -20,6 +20,8 @@ Follow these steps to complete the lab:
 2. **Update the build step with values from CloudFormation**
 3. **Run the Jenkins job manually to confirm everything works**
 
+This lab should take 10 to 15 minutes to complete.
+
 ## Instructions
 
 ### 1. Finish the Jenkins Job Configuration
@@ -108,7 +110,7 @@ make testdeployment \
 
 Use the following observations to expand your skill with Jenkins.
 
-1. **Add Parameters**: The deployment job could be updated to use parameters.  That would keep us from having to hard code values into the build steps for the function name, function URL, region, and environment in the build steps.
+1. **Add Parameters**: The deployment job could be updated to use parameters.  That would keep us from having to hard code values into the build steps for the function name, function URL, and region in the build steps.
 
     - Update the job to use **String** parameters for:
 
