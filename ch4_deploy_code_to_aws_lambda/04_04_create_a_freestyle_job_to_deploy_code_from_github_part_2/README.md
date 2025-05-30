@@ -33,10 +33,31 @@ make all \
 ## Third Build Step: Test the Deployed Code
 
 ```bash
+#!/bin/bash -xe
+
 make testdeployment \
  URL="REPLACE_WITH_YOUR_FUNCTION_URL" \
  VERSION="${GIT_COMMIT}"
 ```
+
+## Shenanigans and Extra Credit
+
+Use the following observations to expand your skill with Jenkins.
+
+1. **Add Parameters**: The deployment job could be updated to use parameters.  That would keep us from having to hard code values into the build steps for the function name, function URL, region, and environment in the build steps.
+
+    - Update the job to use **String** parameters for:
+        - FUNCTION_NAME
+        - REGION
+        - FUNCTION_URL
+
+    - Use the CloudFormation output values as the defaults.
+
+    - Update the build steps to use the paramter varaibles instead of hard-coded values.
+
+1. **Archive Artifacts**: It might be beneficial to make the build artifact more accessible after the job completes.
+
+    - Add a **Post-Build Action** to archive the file named `lambda.zip` created by the build step.
 
 <!-- FooterStart -->
 ---
