@@ -1,6 +1,6 @@
 # 04_04 Create a freestyle job to deploy code from GitHub, part 2
 
-## First Build Step
+## First Build Step: Create Virtual Environment
 
 ```bash
 #!/bin/bash
@@ -12,7 +12,7 @@ if [ ! -d "venv" ]; then
 fi
 ```
 
-## Second Build Step
+## Second Build Step: Test, Build and, Deploy the Code
 
 ```bash
 #!/bin/bash -xe
@@ -30,11 +30,11 @@ make all \
  ENVIRONMENT="production"
 ```
 
-## Third Build Step
+## Third Build Step: Test the Deployed Code
 
 ```bash
 make testdeployment \
- URL="https://pjt5cyeimtrufqdhmzkdrxwpb40ewtej.lambda-url.us-west-2.on.aws/" \
+ URL="REPLACE_WITH_YOUR_FUNCTION_URL" \
  VERSION="${GIT_COMMIT}"
 ```
 
