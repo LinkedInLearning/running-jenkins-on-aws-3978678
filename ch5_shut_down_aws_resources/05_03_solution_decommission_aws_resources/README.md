@@ -40,7 +40,7 @@ This challenge should take 10 to 15 minutes to complete.
 
 ### 3. Remove Associated Resources
 
-#### a. Delete the Elastic IP Address
+#### Delete the Elastic IP Address
 
 1. In the **EC2 Console**, go to **Elastic IPs** under **Network & Security**
 1. Locate the Elastic IP address associated with the Jenkins server
@@ -49,7 +49,7 @@ This challenge should take 10 to 15 minutes to complete.
 1. With the IP still selected, choose **Actions → Release Elastic IP address**
 1. Confirm the release
 
-#### b. Delete the Security Groups
+#### Delete the Security Groups
 
 > [!IMPORTANT]
 > The `build-server` security group references the `jenkins-server` group to allow SSH access. To avoid dependency errors, delete the `build-server` group first.
@@ -67,14 +67,14 @@ This challenge should take 10 to 15 minutes to complete.
     - Choose **Actions → Delete security group**
     - Confirm the deletion
 
-#### c. Delete the SSH Key Pair
+#### Delete the SSH Key Pair
 
 1. In the **EC2 Console**, go to **Key Pairs**
 1. Locate the key pair named `build-server`
 1. Select it and choose **Actions → Delete**
 1. Confirm the deletion
 
-#### d. Delete the IAM Roles
+#### Delete the IAM Roles
 
 1. Go to the **IAM Console**, select **Roles**
 1. Locate the roles used by the EC2 instances (e.g., `ec2-lambda`, `ec2-jenkins`)
