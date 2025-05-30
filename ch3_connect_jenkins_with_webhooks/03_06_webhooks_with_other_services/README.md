@@ -1,4 +1,10 @@
+# 03_06 Create and test webhooks with other services
 
+Even though this course focuses on using Jenkins with GitHub, Jenkins isn't limited to GitHub alone.
+
+With the right plugins, Jenkins can integrate with many other version control services.
+
+Take a look at the next set of exercise files to see how webhooks from GitLab and Bitbucket can be configured to trigger Jenkins jobs automatically—just like we’ve done with GitHub.
 
 <!-- FooterStart -->
 ---

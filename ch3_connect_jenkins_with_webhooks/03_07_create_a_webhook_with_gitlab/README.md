@@ -155,5 +155,5 @@ This challenge should take 15 to 20 minutes to complete.
 
 <!-- FooterStart -->
 ---
-[← README](../03_06_webhooks_with_other_services/README.md) | [03_08 Create and test a webhook with Bitbucket →](../03_08_create_a_webhook_with_bitbucket/README.md)
+[← 03_06 Create and test webhooks with other services](../03_06_webhooks_with_other_services/README.md) | [03_08 Create and test a webhook with Bitbucket →](../03_08_create_a_webhook_with_bitbucket/README.md)
 <!-- FooterEnd -->

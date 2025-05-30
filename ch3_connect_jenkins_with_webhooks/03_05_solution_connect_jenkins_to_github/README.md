@@ -92,5 +92,5 @@ This challenge should take 15 to 20 minutes to complete.
 
 <!-- FooterStart -->
 ---
-[← 03_06 Challenge Connect Jenkins to GitHub](../03_04_challenge_connect_jenkins_to_github/README.md) | [README →](../03_06_webhooks_with_other_services/README.md)
+[← 03_06 Challenge Connect Jenkins to GitHub](../03_04_challenge_connect_jenkins_to_github/README.md) | [03_06 Create and test webhooks with other services →](../03_06_webhooks_with_other_services/README.md)
 <!-- FooterEnd -->
