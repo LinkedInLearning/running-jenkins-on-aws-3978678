@@ -78,7 +78,7 @@ This challenge should take 10 to 15 minutes to complete.
 
 1. Go to the **IAM Console**, select **Roles**
 1. Locate the roles used by the EC2 instances (e.g., `ec2-lambda`, `ec2-jenkins`)
-1. Select each role, then choose **Delete role**
+1. Select each role, then choose **Delete**
 1. To confirm deletion, enter `delete` in the text input field
 1. Select **Delete**
 
