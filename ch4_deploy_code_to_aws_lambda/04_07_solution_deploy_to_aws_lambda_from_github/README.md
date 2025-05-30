@@ -66,5 +66,5 @@ This challenge should take 10 to 15 minutes to complete.
 
 <!-- FooterStart -->
 ---
-[← 04_06 Challenge Deploy to AWS Lambda from GitHub](../04_06_challenge_deploy_to_aws_lambda_from_github/README.md) | [05_01 Stop or remove AWS resources →](../../ch5_shut_down_aws_resources/05_01_stop_or_remove_aws_resources/README.md)
+[← 04_06 Challenge Deploy to AWS Lambda from GitHub](../04_06_challenge_deploy_to_aws_lambda_from_github/README.md) | [05_01 Remove AWS resources →](../../ch5_shut_down_aws_resources/05_01_remove_aws_resources/README.md)
 <!-- FooterEnd -->

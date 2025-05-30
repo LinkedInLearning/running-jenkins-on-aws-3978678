@@ -1,4 +1,4 @@
-# 05_01 Stop or remove AWS resources
+# 05_01 Remove AWS resources
 
 <!-- FooterStart -->
 ---
