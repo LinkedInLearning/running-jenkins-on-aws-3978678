@@ -16,7 +16,7 @@ Developing a proficiency with this technique is key to developing the CI/CD pipe
    - Prints the contents of the `README.md` file
 
 3. Configure a webhook in GitHub that notifies Jenkins when a push event occurs
-4. Make a change to the GitHub repository to trigger the Jenkins job and review the console output
+4. Make a small change to the GitHub repository to trigger the Jenkins job and review the console output
 
 This challenge should take 15 to 20 minutes to complete.
 
