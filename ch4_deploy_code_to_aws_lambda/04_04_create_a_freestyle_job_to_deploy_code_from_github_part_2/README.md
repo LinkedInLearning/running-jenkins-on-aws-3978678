@@ -1,5 +1,7 @@
 # 04_04 Create a freestyle job to deploy code from GitHub, part 2
 
+Create Three build steps in the deployment job and copy the commands below into each step accordingly.
+
 ## First Build Step: Create Virtual Environment
 
 ```bash
