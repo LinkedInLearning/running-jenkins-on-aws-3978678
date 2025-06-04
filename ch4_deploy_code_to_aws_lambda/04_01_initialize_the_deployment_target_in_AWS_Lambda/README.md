@@ -18,7 +18,7 @@ This lab should take 5 to 10 minutes to complete.
 > [!NOTE]
 > If you've already downloaded the exercise files, you can skip this step!
 
-1. Visit the course GitHub repository.
+1. Visit the [course GitHub repository](https://github.com/LinkedInLearning/running-jenkins-on-aws-3978678).
 1. From the home page of the repository, select **Code > Download ZIP**.
 1. Extract the ZIP file on your local system to view its contents.
 1. Navigate to the lesson folder:
