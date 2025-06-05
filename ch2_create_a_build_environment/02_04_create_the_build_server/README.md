@@ -51,7 +51,7 @@
 
     # install development tools
     dnf groupinstall -y "Development Tools"
-    pip install virtualenv
+    /usr/bin/pip3.12 install virtualenv
 
     reboot now
     ```
