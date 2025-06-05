@@ -38,7 +38,7 @@ This lab should take 10 to 15 minutes to complete.
 # Check if venv directory exists
 if [ ! -d "venv" ]; then
     # Create venv directory and activate it
-    virtualenv venv
+    /usr/local/bin/virtualenv venv
 fi
 ```
 
