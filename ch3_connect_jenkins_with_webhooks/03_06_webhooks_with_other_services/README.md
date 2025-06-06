@@ -1,10 +1,16 @@
 # 03_06 Create and test webhooks with other services
 
-Even though this course focuses on using Jenkins with GitHub, Jenkins isn't limited to GitHub alone.
+The **GitHub plugin** is one of the default plugins used with Jenkins and enables webhook integration between Jenkins and GitHub.
 
-With the right plugins, Jenkins can integrate with many other version control services.
+While this course focuses on GitHub, Jenkins is not limited to a single source control provider.
 
-Take a look at the next set of exercise files to see how webhooks from GitLab and Bitbucket can be configured to trigger Jenkins jobs automatically—just like we’ve done with GitHub.
+With the help of additional plugins, Jenkins can integrate with services like:
+
+- **GitLab**
+- **Bitbucket**
+- And many others
+
+The upcoming exercise files demonstrate how to install and configure plugins to receive webhooks from GitLab and Bitbucket—using a similar approach as with GitHub.
 
 <!-- FooterStart -->
 ---

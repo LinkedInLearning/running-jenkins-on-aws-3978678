@@ -22,6 +22,19 @@ You’ll need the following accounts:
 
 If you need to ramp up or refresh yourself on any of these subjects, there are other courses here in the Linked In Learning library that you can use to get up to speed.
 
+## Software Versions
+
+The following software will be used in this course:
+
+| Software Name                    | Software Version                         |
+|----------------------------------|------------------------------------------|
+| Ubuntu                           | 24.04 LTS                                |
+| OpenJDK Runtime Environment      | 21.0.7+6-Ubuntu-0ubuntu124.04            |
+| OpenJDK Runtime Environment      | Corretto 21.0.6.7.1 (build 21.0.6+7-LTS) |
+| NGINX                            | nginx/1.24.0 (Ubuntu)                    |
+| Jenkins Automation Server Engine | 2.504.1                                  |
+| Python                           | 3.12                                     |
+
 <!-- FooterStart -->
 ---
 [← 00_01 Intro](../00_01_intro/README.md) | [01_01 Architect the Jenkins Environment on AWS →](../../ch1_setting_up_jenkins/01_01_architect_the_jenkins_environment_on_aws/README.md)

@@ -3,7 +3,6 @@
 1. On the EC2 Dashboard, select **Launch Instance**.
 1. Set the instance name to `jenkins-server`.
 1. Choose the AMI: **Ubuntu Server 24.04 LTS**.
-	1. https://aws.amazon.com/marketplace/procurement?productId=prod-ib2w5aw4ynhey&offerId=offer-jwqxgu6msev6q
 1. Choose instance type: **t2.micro** (eligible for free tier).
 1. Under **Key pair**, choose **Proceed without a key pair**.
 1. Under **Network settings**:
