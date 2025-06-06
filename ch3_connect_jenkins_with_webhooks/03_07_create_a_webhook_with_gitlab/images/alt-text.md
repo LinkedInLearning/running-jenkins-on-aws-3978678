@@ -1,6 +1,6 @@
 # Alternative Text for Images
 
-This file contains the alternative text descriptions for all images used in the README.md file.
+This file contains the alternative text descriptions for all images used in the [README.md](../README.md) file.
 
 | File Name | Alternative Text |
 |-----------|-----------------|
