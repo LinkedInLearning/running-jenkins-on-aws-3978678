@@ -4,9 +4,9 @@ This file contains the alternative text descriptions for all images used in the 
 
 | File Name | Alternative Text |
 |-----------|-----------------|
-| 03_07-02-g-copy-the-repo-url.png | Copy the GitLab repository URL from the Clone with HTTPS section |
 | 03_07-00-g-create-an-access-token.png | Create a new access token in GitLab with read_repository scope |
 | 03_07-01-j-install-the-plugin.png | Install the GitLab plugin in Jenkins from the Available Plugins section |
+| 03_07-02-g-copy-the-repo-url.png | Copy the GitLab repository URL from the Clone with HTTPS section |
 | 03_07-03-j-add-the-repo-url-to-scm-and-create-credentials.png | Add GitLab repository URL to Jenkins SCM configuration and create credentials |
 | 03_07-04-j-create-username-with-password-credential.png | Create username with password credential in Jenkins for GitLab access |
 | 03_07-05-j-select-the-credential.png | Select the newly created GitLab credentials in Jenkins SCM configuration |

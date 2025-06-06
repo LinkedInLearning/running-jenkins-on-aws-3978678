@@ -28,7 +28,7 @@ This challenge should take 15 to 20 minutes to complete.
 
    - In the repository, select **Code**, then under **Clone with HTTPS** select the **clipboard icon** to copy the URL.
 
-   ![Copy the GitLab repository URL from the Clone with HTTPS section](images/03_04-02-g-copy-the-repo-url.png)
+   ![Copy the GitLab repository URL from the Clone with HTTPS section](images/03_07-02-g-copy-the-repo-url.png)
 
 1. **Create an Access Token**
 
