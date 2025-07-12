@@ -14,12 +14,12 @@ The course is organized into the following chapters:
 
 | Chapter | Description |
 | --- | --- |
-| **0: Introduction** | Course overview, Jenkins and AWS integration, CI/CD pipeline concepts, and prerequisites |
-| **1: Setting Up Jenkins** | AWS infrastructure planning, EC2 instance creation, security groups, IAM roles, Java/Jenkins/NGINX installation, and Jenkins configuration |
-| **2: Create a Build Environment** | Build server architecture, IAM roles for build servers, security groups and key pairs, EC2 build server creation, and Jenkins-agent connectivity |
-| **3: Connect Jenkins with Webhooks** | CI/CD pipeline planning, webhook concepts, GitHub/GitLab/Bitbucket integration, and automated build triggers |
-| **4: Deploy Code to AWS Lambda** | AWS Lambda deployment targets, CloudFormation templates, GitHub repository setup, Jenkins freestyle jobs, and automated deployments |
-| **5: Shut Down AWS Resources** | Resource decommissioning best practices, CloudFormation stack deletion, EC2 instance termination, and cost management |
+| **0: Introduction** | Course overview and prerequisites |
+| **1: Setting Up Jenkins** | Deploy the resources needed for a primary Jenkins server |
+| **2: Create a Build Environment** | Deploy the resources needed to set up a build agent |
+| **3: Connect Jenkins with Webhooks** | Plan a CI/CD pipeline that connects a Jenkins job to a code repository |
+| **4: Deploy Code to AWS Lambda** | Apply the build environment by deploying code to AWS Lambda |
+| **5: Shut Down AWS Resources** | Best practices for decommissioning resources |
 | **6: Conclusion** | Course summary, key concepts review, and next steps for continued learning |
 
 ## Installing
