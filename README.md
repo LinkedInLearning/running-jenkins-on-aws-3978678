@@ -1,47 +1,42 @@
 # Running Jenkins on AWS: Deploying and Managing Jenkins on Cloud Infrastructure
+
 This is the repository for the LinkedIn Learning course `Running Jenkins on AWS: Deploying and Managing Jenkins on Cloud Infrastructure`. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![lil-thumbnail-url]
 
 ## Course Description
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+## Course Structure
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
+This repository is organized into directories that correspond to the videos and exercises in the course. Each chapter has its own directory, and within each chapter directory are subdirectories for each video or exercise.
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+The course is organized into the following chapters:
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
-
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+| Chapter | Description |
+| --- | --- |
+| **0: Introduction** | Course overview, Jenkins and AWS integration, CI/CD pipeline concepts, and prerequisites |
+| **1: Setting Up Jenkins** | AWS infrastructure planning, EC2 instance creation, security groups, IAM roles, Java/Jenkins/NGINX installation, and Jenkins configuration |
+| **2: Create a Build Environment** | Build server architecture, IAM roles for build servers, security groups and key pairs, EC2 build server creation, and Jenkins-agent connectivity |
+| **3: Connect Jenkins with Webhooks** | CI/CD pipeline planning, webhook concepts, GitHub/GitLab/Bitbucket integration, and automated build triggers |
+| **4: Deploy Code to AWS Lambda** | AWS Lambda deployment targets, CloudFormation templates, GitHub repository setup, Jenkins freestyle jobs, and automated deployments |
+| **5: Shut Down AWS Resources** | Resource decommissioning best practices, CloudFormation stack deletion, EC2 instance termination, and cost management |
+| **6: Conclusion** | Course summary, key concepts review, and next steps for continued learning |
 
 ## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+
+1. To use these exercise files, you must have the following accounts in place:
+
+    - **GitHub**, a web-based platform that uses Git for version control and collaboration on software development projects.
+    - **Amazon Web Services**, a cloud computing platform that provides a wide array of on-demand services
+
+1. Clone this repository to your local machine using your system's terminal or using a GUI tool like [SourceTree](https://www.sourcetreeapp.com/) or [GitHub Desktop](https://github.com/apps/desktop).
+1. See the README file in each directory for specific instructions related to the corresponding lesson.
 
 ## Instructor
 
-Instructor name
+Michael Jenkins, Lead Software Engineer
 
-Instructor description
-
-                            
-
-Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/).
-
-
-[0]: # (Replace these placeholder URLs with actual course URLs)
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/michael-jenkins).
 
 [lil-course-url]: https://www.linkedin.com/learning/
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
