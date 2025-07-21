@@ -17,5 +17,5 @@ The following Software installed on the server running Jenkins:
 
 <!-- FooterStart -->
 ---
-[← 00_02 What you should know](../../ch0_introduction/00_02_what_you_should_know/README.md) | [01_02 Create a security group →](../01_02_create_a_security_group/README.md)
+[← 00_02 What you should know](../../ch0_introduction/00_02_what_you_should_know/README.md) | [01_02 Create an IAM role for the Jenkins server →](../01_02_create_an_iam_role_for_the_jenkins_server/README.md)
 <!-- FooterEnd -->

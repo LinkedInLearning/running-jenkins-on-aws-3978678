@@ -1,4 +1,4 @@
-# 01_03 Create an IAM role for the Jenkins server
+# 01_02 Create an IAM role for the Jenkins server
 
 1. In the AWS Console, navigate to the **IAM dashboard**.
 1. Select **Roles** from the sidebar, then choose **Create role**.
@@ -10,5 +10,5 @@
 
 <!-- FooterStart -->
 ---
-[← 01_02 Create a security group](../01_02_create_a_security_group/README.md) | [01_04 Create the Jenkins EC2 instance →](../01_04_create_the_jenkins_ec2_instance/README.md)
+[← 01_01 Architect the Jenkins Environment on AWS](../01_01_architect_the_jenkins_environment_on_aws/README.md) | [01_03 Create a security group →](../01_03_create_a_security_group/README.md)
 <!-- FooterEnd -->

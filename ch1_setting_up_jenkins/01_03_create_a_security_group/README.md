@@ -1,4 +1,4 @@
-# 01_02 Create a security group
+# 01_03 Create a security group
 
 1. Navigate to the **EC2 Dashboard** and select **Security Groups** under Network & Security.
 1. Select **Create Security Group**.
@@ -15,5 +15,5 @@
 
 <!-- FooterStart -->
 ---
-[← 01_01 Architect the Jenkins Environment on AWS](../01_01_architect_the_jenkins_environment_on_aws/README.md) | [01_03 Create an IAM role for the Jenkins server →](../01_03_create_an_iam_role_for_the_jenkins_server/README.md)
+[← 01_02 Create an IAM role for the Jenkins server](../01_02_create_an_iam_role_for_the_jenkins_server/README.md) | [01_04 Create the Jenkins EC2 instance →](../01_04_create_the_jenkins_ec2_instance/README.md)
 <!-- FooterEnd -->
