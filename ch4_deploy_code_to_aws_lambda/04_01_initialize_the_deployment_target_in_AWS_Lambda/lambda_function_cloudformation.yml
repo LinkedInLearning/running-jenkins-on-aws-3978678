@@ -93,13 +93,21 @@ Resources:
       TargetFunctionArn: !Ref LambdaFunction
       AuthType: NONE
 
-  LambdaUrlPermission:
+  LambdaInvokeFunctionUrlPermission:
     Type: AWS::Lambda::Permission
     Properties:
       FunctionName: !Ref LambdaFunction
       Principal: "*"
-      Action: "lambda:InvokeFunctionUrl"
+      Action: lambda:InvokeFunctionUrl
       FunctionUrlAuthType: NONE
+
+  LambdaInvokeFunctionPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref LambdaFunction
+      Principal: "*"
+      Action: lambda:InvokeFunction
+      InvokedViaFunctionUrl: true
 
 Outputs:
   AwsRegion:
